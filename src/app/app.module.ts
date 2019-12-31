@@ -1,3 +1,6 @@
+import { RouterModule } from '@angular/router';
+import { SiteModule } from './site/site.module';
+import { AdminModule } from './admin/admin.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    AdminModule,
+    SiteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
