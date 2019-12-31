@@ -1,21 +1,24 @@
+import { SharedModule } from './../shared/shared.module';
 import { AdminRoutingModule } from './admin-routing.module';
 import { RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './../core/admin-layout/admin-layout.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from '../auth/login/login.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    SharedModule
   ]
 })
 export class AdminModule { }
