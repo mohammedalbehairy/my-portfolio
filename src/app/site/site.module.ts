@@ -11,6 +11,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+import { PortfolioDetailsComponent } from './components/portfolio-details/portfolio-details.component';
 
 
 
@@ -23,7 +24,8 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
     PortfolioComponent,
     BlogsComponent,
     ContactComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    PortfolioDetailsComponent
   ],
   imports: [
     CommonModule,
