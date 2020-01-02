@@ -1,3 +1,5 @@
+import { AuthService } from './shared/services/auth.service';
+import { httpInterceptorProviders } from './shared/interceptors/index';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { SiteModule } from './site/site.module';
@@ -22,7 +24,10 @@ import { AuthModule } from './auth/auth.module';
     SiteModule,
     AuthModule
   ],
-  providers: [],
+  providers: [
+    httpInterceptorProviders,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
